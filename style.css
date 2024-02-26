@@ -1,1 +1,314 @@
-
+/*Aqui inicia el CSS para nuestra pagina Home*/
+body{
+    font-family: "Open Sans", sans-serif;
+  }
+  .banner{
+      padding:1px;
+      width: 100%;
+      height: 450px;
+  }
+  /* img+p{
+      background-color: aqua;
+  } */
+  .principal {
+      padding: 3em 0;
+      background: #FEFEFE;
+      /* width: 940px;
+      margin: 0 auto; */
+  }
+  .titulo-principal{
+      text-align: center;
+      font-size: 2em;
+      margin: 0 0 1em;
+      clear:left;
+      color: rgba(179, 6, 6, 0.685);/* opacidad en el texto */
+      text-shadow:2px 2px 10px red;
+  }
+  .titulo-principal:first-letter{
+      font-weight: bold;
+  }
+  .principal p{
+      margin: 0 0 1em;
+  }
+  .principal strong{
+      font-weight: bold;
+  }
+  .principal em{
+      font-style: italic;
+  }
+  p{
+      text-align: left;
+      font-size: 18px;
+  }
+  .utensilios{
+      width: 150px;
+   float: left;/*Colocar el elemento en la lateral en la pág y dejar los otros elementos alrededor de él.*/
+   margin:0 20px 20px 0;
+   
+  }
+  .mapa{
+      padding: 3em 0;
+     /* background:linear-gradient(45deg,orange,blue,orange);*/
+     background:linear-gradient(#fefefe ,#888888);
+  }
+  .mapa p{
+  margin: 0 0 2em ;
+  text-align: center;
+  }
+  .mapa-contenido{
+      width: 940px;
+      margin: 0 auto;
+  }
+  
+  .diferenciales{
+  background-color: #888888;
+  padding:1em 0 ;
+  box-shadow: inset 0 0 30 #80c403;
+  }
+  .contenido-diferenciales{
+      width: 800px; 
+      height: 325px;
+      margin: 0 auto;
+      padding: 20px 0 0px 0 ;
+      
+  }
+  
+  .lista-diferenciales{
+      width: 40%;
+      display: inline-block;
+      vertical-align: top;
+  
+  }
+  .imagen-diferenciales{
+      width: 60%;
+      transition:40ms ;
+      box-shadow: 10px 10px 30px 15px #000000,-10px -10px #000000;/* sombra */
+      float: right;
+    
+      }
+  .imagen-diferenciales:hover{
+         opacity: 0.9; 
+      }
+  .items{
+      line-height: 1.5;
+      font-style: italic;
+      font-size: 20px;
+  }
+  
+  .items:first-child {
+      font-weight: bold;
+  }
+  .items:before{
+          content:"★"
+  /* content:"\272F"; */
+  }
+  
+  .video{
+      width: 560px;
+      margin: 3em auto;
+      
+  }
+  
+  
+  /*header barberia*/
+  header{
+      background:url(imagenes/bg.jpg);
+      padding: 40px 0;
+  }
+  .caja{
+      width: 1200px;
+      height: 250px;
+      position: relative;
+      margin: 0 auto;
+  }
+  nav{
+      position: absolute;
+        top: 110px;
+        right: 0;
+    }
+    nav  li{
+        display: inline;
+        margin: 0 0 0 15px;/*separar listas*/
+    }
+    nav a{
+        text-transform: uppercase;
+        color: #FEFEFE;
+        font-weight: bold;
+        font-size: 22px;
+        text-decoration: none;/*quitar la decoración del texto*/
+    }
+    nav a:hover{
+        color: #c78c19;
+        text-decoration: underline;
+    
+    }
+  /*footer barberia*/
+  footer{
+      text-align: center;
+      background:url(imagenes/bg.jpg);
+      padding: 40px;
+  }
+  .copyright{
+      color:aliceblue;
+      font-size:13px;
+      text-align: center;
+      margin: 20px;
+      
+  }
+  
+      
+  
+  
+  .video-responsive {
+      position: relative;
+      padding-bottom: 56.25%; /* 16/9 ratio */
+      padding-top: 30px; /* IE6 workaround*/
+      height: 0;
+      overflow: hidden;
+      }
+      
+      .video-responsive iframe,
+      .video-responsive object,
+      .video-responsive embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      }
+  
+  /*Aqui inicia el CSS para nuestra pagina Productos*/
+  .productos{
+      width: 940px;
+      margin:0 auto;
+      padding: 50px;
+  
+  }
+  .productos li{
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  /*background: #CCCCCC;*/
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border:2px solid #000000;
+  border-top-width: 10px;
+  /*border-radius:10px 25px 40px 50px;*/
+  border-radius: 20px;
+  }
+  /*hover hacer cambios cuando el usuario pasa el cursor sobre el elemento*/
+  .productos li:hover{
+      border-color: #c78c19;
+  }
+  /*active cuando un elemento eta siendo activado por el usuario*/
+  .productos li:active{
+      border-color: #088c19;
+  }
+  .productos h2{
+      font-size: 30px;
+      font-weight: bold;
+  }
+  .productos h2:hover{
+      font-size: 40px;
+  }
+  .producto-descripcion{
+  font-size: 18px;
+  }
+  .producto-precio{
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+  }
+  
+  /*Aqui inicia el CSS para nuestra pagina contactos*/
+  .contenido-contactos{
+      width: 500px;
+      background: #c78c19;
+      padding-left: 20px;
+      margin:10px 10px 20px 350px;
+  }
+  
+  .formulario-principal{
+      margin: 20px 2px 10px 60px;
+  }
+  form label,form legend{
+    display: block;  
+    font-size: 20px;
+  }
+  .input-padron{
+      display:block;
+     padding:0 5px 10px 120px;
+      width: 50%;
+  }
+  .checkbox{
+      margin:20px 0;
+  }
+  
+  form legend{
+      color:blue;
+  }
+  .horario{
+      margin-top: 10px;
+  }
+  .enviar{
+      width: 50%;
+      padding: 15px 0;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background-color: orange;
+      border: none;
+      border-radius: 5px;
+      transition: 1s background;
+      cursor: pointer;
+  
+  }
+  .enviar:hover{
+      background-color: brown;
+      transform:scale(1.20) ;/*aumentar tamaño  y rotar rotate(10deg) cuano pasa el cursor*/
+  }
+  table{
+      margin:40px 40px;
+  
+  }
+  /*encabezado de la tabla*/
+  thead{
+      background:#555555;
+      color:while;
+      font-weight: bold;
+  }
+  td,th{
+      border:1px solid #000000;
+      padding:8px 15px;
+  }
+  
+  /* responsive */
+  @media screen and (max-width:480px){
+      /* alinear la imagen de la barberia de la barra de navegacion */
+      h1{
+          text-align: center;
+      }
+      /* barra de navegacion home, productos,contacto */
+      nav{
+          position: static;
+      }
+      .caja,.principal,.mapa-contenido,.contenido-diferenciales,.diferenciales,.video,.contenido-contactos,.formulario-principal,.input-padron{
+          width: auto;
+          margin:0 auto;
+      }
+      .lista-diferenciales.imagen-diferenciales{
+          width: 100%;
+      }
+      .productos li{
+          width: auto;
+          padding: 10px 1opx 10px 10px;
+      }
+      
+      
+  
+      
+  }
+  
+  
